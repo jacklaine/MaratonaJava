@@ -12,12 +12,18 @@ public class Aula02TipoPrimitivo {
         boolean truee = true;
         boolean falsee = false;
         char caractere = 65;
-        String text = "estou cansada e com fome";
+        String text = "ornitorrincos são fofos";
 
         System.out.println(age);
         System.out.println(truee);
         System.out.println(caractere);
         System.out.println("Mano, "+text);
+        System.out.println(numberLong);
+        System.out.println(salaryDouble);
+        System.out.println(salaryFloat);
+        System.out.println(ageByte);
+        System.out.println(ageShort);
+        System.out.println(falsee);
         
     }
     
