@@ -29,9 +29,6 @@ public class Aula05EstruturasCondicionais05 {
             default:
                 System.out.println("Opção inválida");
                 break;
-
         }
-
     }
-
 }
