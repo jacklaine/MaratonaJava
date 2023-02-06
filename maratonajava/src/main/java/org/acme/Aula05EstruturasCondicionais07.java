@@ -1,6 +1,6 @@
 package org.acme;
 
-public class Aula05EstruturasDeRepeticao07 {
+public class Aula05EstruturasCondicionais07 {
     public static void main(String[] args) {
         byte dia = 1;
 
