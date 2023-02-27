@@ -2,9 +2,37 @@ package org.acme.javacore.Csobrecargametodos.dominio;
 
 public class Anime {
 
+    private String nome;
     private String tipo;
     private int episodios;
+    private String genero;
 
+    public void init(String nome, String tipo, int episodio) {
+        this.nome = nome;
+        this.tipo = tipo;
+        this.episodios = episodio;
+    }
+
+    public void init(String nome, String tipo, int episodio, String genero) {
+        this.init(nome, tipo, episodio);
+        this.genero = genero;
+    }
+
+
+    public void imprime() {
+        System.out.println(this.nome);
+        System.out.println(this.tipo);
+        System.out.println(this.episodios);
+        System.out.println(this.genero);
+    }
+
+
+    public String getNome() {
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
     public String getTipo() {
         return tipo;
     }
@@ -17,5 +45,13 @@ public class Anime {
     public void setEpisodios(int episodios) {
         this.episodios = episodios;
     }
+    public String getGenero() {
+        return genero;
+    }
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    
 
 }
