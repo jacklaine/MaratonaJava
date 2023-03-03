@@ -1,4 +1,4 @@
-package org.acme.javacore.Csobrecargametodos.dominio;
+package org.acme.javacore.Dconstrutores.domain;
 
 public class Anime {
 
@@ -6,54 +6,64 @@ public class Anime {
     private String tipo;
     private int episodios;
     private String genero;
+    private String estudio;
 
-    public void init(String nome, String tipo, int episodio) {
+    public Anime(String nome, String tipo, int episodios, String genero) {
+        this();
         this.nome = nome;
         this.tipo = tipo;
-        this.episodios = episodio;
-    }
-
-    public void init(String nome, String tipo, int episodio, String genero) {
-        this.init(nome, tipo, episodio);
+        this.episodios = episodios;
         this.genero = genero;
     }
+
+    public Anime(String nome, String tipo, int episodios, String genero, String estudio) {
+        this(nome, tipo, episodios, genero);
+        this.nome = nome;
+        this.tipo = tipo;
+        this.episodios = episodios;
+        this.genero = genero;
+        this.estudio = estudio;
+    }
+
+    public Anime() {
+        System.out.println("Dentro do construtor sem argumentos");
+    }
+
 
     public void imprime() {
         System.out.println(this.nome);
         System.out.println(this.tipo);
         System.out.println(this.episodios);
         System.out.println(this.genero);
+        System.out.println(this.estudio);
     }
+
 
     public String getNome() {
         return nome;
     }
-
     public void setNome(String nome) {
         this.nome = nome;
     }
-
     public String getTipo() {
         return tipo;
     }
-
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-
     public int getEpisodios() {
         return episodios;
     }
-
     public void setEpisodios(int episodios) {
         this.episodios = episodios;
     }
-
     public String getGenero() {
         return genero;
     }
-
     public void setGenero(String genero) {
         this.genero = genero;
     }
+
+    
+
 }
