@@ -11,5 +11,15 @@ public class Local {
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
+
+    public Local(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public void imprime() {
+
+        System.out.println(endereco);
+
+    }
     
 }

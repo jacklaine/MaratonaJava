@@ -29,10 +29,29 @@ public class Seminario {
         return alunos;
     }
 
+    public Seminario (String titulo) {
+        this.titulo = titulo;
+    }
+
+    public Seminario (String titulo, Aluno[] alunos) {
+        this.titulo = titulo;
+        this.alunos = alunos;
+    }
+
+    public Seminario (String titulo, Aluno[] alunos, Local local) {
+        this.titulo = titulo;
+        this.alunos = alunos;
+        this.local = local;
+    }
+
     public void imprime() {
-        System.out.println(this.titulo);
-        System.out.println(this.alunos);
-        System.out.println(this.local);
+        System.out.println(titulo);
+        System.out.println(local);
+
+        for (Aluno aluno : alunos) {
+            System.out.println(aluno.getNome());
+
+        }
     }
 
 }
