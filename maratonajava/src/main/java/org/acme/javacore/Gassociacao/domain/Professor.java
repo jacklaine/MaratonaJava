@@ -54,7 +54,7 @@ public class Professor {
         System.out.println(especialidade);
 
         for (Seminario seminario : seminarios) {
-            System.out.println(seminario);
+            System.out.println(seminario.getTitulo());
 
         }
 

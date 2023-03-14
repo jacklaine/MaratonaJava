@@ -46,7 +46,7 @@ public class Seminario {
 
     public void imprime() {
         System.out.println(titulo);
-        System.out.println(local);
+        System.out.println(local.getEndereco());
 
         for (Aluno aluno : alunos) {
             System.out.println(aluno.getNome());

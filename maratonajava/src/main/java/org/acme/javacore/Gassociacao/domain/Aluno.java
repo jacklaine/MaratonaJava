@@ -32,7 +32,7 @@ public class Aluno {
 
     public void imprime() {
         System.out.println(nome);
-        System.out.println(seminario);
+        System.out.println(seminario.getTitulo());
     }
 
 }

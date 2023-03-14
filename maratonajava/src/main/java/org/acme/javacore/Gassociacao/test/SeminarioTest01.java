@@ -15,13 +15,23 @@ public class SeminarioTest01 {
         Professor professor = new Professor("José", "Professor", seminarios);
         Local local = new Local("Rua vermelha");
 
+        seminario1.setLocal(local);
+
+        aluno1.setSeminario(seminario1);
+        aluno2.setSeminario(seminario1);
+
+        professor.setSeminarios(seminarios);
+
         System.out.println("-------ALUNOS--------:");
         aluno1.imprime();
         aluno2.imprime();
 
         System.out.println("--------SEMINARIO------");
-        seminario1.imprime();
 
+        for (Seminario seminario : seminarios) {
+            seminario.imprime();
+        }
+        
         System.out.println("-------PROFESSOR--------");
         professor.imprime();
 
