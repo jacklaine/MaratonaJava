@@ -11,7 +11,7 @@ public class Endereco {
     // }
 
     public void imprime() {
-        Pessoa p = new Pessoa();
+        Pessoa p = new Pessoa("sasa");
         p.nome = "sasa";
     }
 

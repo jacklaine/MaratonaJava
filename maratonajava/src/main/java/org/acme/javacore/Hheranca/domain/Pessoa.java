@@ -6,16 +6,31 @@ public class Pessoa {
     protected String cpf;
     protected Endereco endereco;
 
-    // public Pessoa(String name, String cpf, Endereco endereco) {
-    // this.name = name;
-    // this.cpf = cpf;
-    // this.endereco = endereco;
-    // }
+    static {
+        System.out.println("Bloco inicialização 0");
+    }
+    {
+        System.out.println("Bloco inicialização 1");
+    }
+    {
+        System.out.println("Bloco inicialização 2");
+    }
+
+    public Pessoa(String nome) {
+        this.nome = nome;
+        System.out.println("Dentro do construtor pessoa");
+    }
+
+    public Pessoa(String nome, String cpf, Endereco endereco) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.endereco = endereco;
+    }
 
     public void imprime() {
         System.out.println(this.nome);
         System.out.println(this.cpf);
-        System.out.println(this.endereco.getRua() +" "+this.endereco.getCep());
+        System.out.println(this.endereco.getRua() + " " + this.endereco.getCep());
     }
 
     public String getNome() {
