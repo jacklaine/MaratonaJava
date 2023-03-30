@@ -1,17 +1,27 @@
 package org.acme.javacore.Kenum.domain;
 
 public class Cliente {
+
+    public enum TipoPagamento{
+        DEBITO, CREDITO
+    }
+
     private String nome;
     private TipoCliente tipoCliente;
+    private TipoPagamento tipoPagamento;
 
-    public Cliente(String nome, TipoCliente tipoCliente) {
+    public Cliente(String nome, TipoCliente tipoCliente, TipoPagamento tipoPagamento) {
         this.nome = nome;
         this.tipoCliente = tipoCliente;
+        this.tipoPagamento = tipoPagamento;
     }
 
     @Override
     public String toString() {
-        return "Cliente [nome=" + nome + ", tipoCliente=" + tipoCliente + "]";
+        return "Cliente [nome=" + nome + 
+        ", tipoCliente=" + tipoCliente +
+        ", tipoClienteId=" + tipoCliente.VALOR +
+        ", tipoCliente=" + tipoCliente + "]";
     }
 
     public String getNome() {
@@ -28,6 +38,14 @@ public class Cliente {
 
     public void setTipoCliente(TipoCliente tipoCliente) {
         this.tipoCliente = tipoCliente;
+    }
+
+    public TipoPagamento getTipoPagamento() {
+        return tipoPagamento;
+    }
+
+    public void setTipoPagamento(TipoPagamento tipoPagamento) {
+        this.tipoPagamento = tipoPagamento;
     }
 
 }
