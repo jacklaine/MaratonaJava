@@ -2,9 +2,7 @@ package org.acme.javacore.Kenum.domain;
 
 public class Cliente {
 
-    public enum TipoPagamento{
-        DEBITO, CREDITO
-    }
+
 
     private String nome;
     private TipoCliente tipoCliente;
@@ -20,7 +18,7 @@ public class Cliente {
     public String toString() {
         return "Cliente [nome=" + nome + 
         ", tipoCliente=" + tipoCliente +
-        ", tipoClienteId=" + tipoCliente.VALOR +
+        ", tipoClienteId=" + tipoCliente.valor +
         ", tipoCliente=" + tipoCliente + "]";
     }
 
