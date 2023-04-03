@@ -7,6 +7,12 @@ public class Desenvolvedor extends Funcionario {
 
     @Override
     public String toString() {
-        return "Desenvolvedor []";
+        return "Desenvolvedor{" +
+        "nome='" + nome + '\'' +
+        ", salario=" + salario + '}';
+    }
+
+    public void calculaBonus() {
+        this.salario = salario + salario * 0.05;
     }
 }
