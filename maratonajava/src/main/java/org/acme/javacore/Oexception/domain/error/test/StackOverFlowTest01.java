@@ -1,4 +1,4 @@
-package org.acme.javacore.Npolimorfismo.test;
+package org.acme.javacore.Oexception.domain.error.test;
 
 public class StackOverFlowTest01 {
     public static void main(String[] args) {
