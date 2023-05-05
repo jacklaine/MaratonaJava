@@ -5,6 +5,7 @@ import java.io.IOException;
 
 public class ExceptionTest01 {
     public static void main(String[] args) {
+        criarNovoArquivo();
 
     }
 
