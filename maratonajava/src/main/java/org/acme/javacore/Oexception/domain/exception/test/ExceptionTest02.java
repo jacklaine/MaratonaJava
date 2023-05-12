@@ -11,8 +11,15 @@ public class ExceptionTest02 {
 
     public static void criarNovoArquivo() throws IOException {
         File file = new File("arquivo\\teste.txt");
-        boolean isCriado = file.createNewFile();
-        System.out.println("Arquivo criado" +isCriado);
+        try {
+            boolean isCriado = file.createNewFile();
+            System.out.println("Arquivo criado" +isCriado);
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw e;
+        }
+
     }
     
 }
