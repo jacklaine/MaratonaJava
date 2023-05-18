@@ -1,6 +1,5 @@
 package org.acme.javacore.Npolimorfismo.test;
 
-import org.acme.javacore.Bintroducaometodos.dominio.Calculadora;
 import org.acme.javacore.Npolimorfismo.domain.Computador;
 import org.acme.javacore.Npolimorfismo.domain.Produto;
 import org.acme.javacore.Npolimorfismo.domain.Tomate;

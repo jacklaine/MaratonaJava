@@ -4,6 +4,7 @@ public class RunTimeExceptionTest03 {
 
     public static void main(String[] args) {
         abreConexao();
+        abreConexao2();
     }
     private static String abreConexao() {
         try {
