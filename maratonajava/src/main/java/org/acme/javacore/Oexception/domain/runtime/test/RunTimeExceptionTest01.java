@@ -4,7 +4,7 @@ public class RunTimeExceptionTest01 {
     public static void main(String[] args) {
         // Checked e Unchecked
         Object object = null;
-        System.out.println(object.toString());
-    }
+        System.out.println(object.toString()); //excecao nula proposital
+    } 
     
 }
