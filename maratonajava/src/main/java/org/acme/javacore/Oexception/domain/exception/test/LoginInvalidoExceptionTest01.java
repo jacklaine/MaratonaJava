@@ -19,9 +19,12 @@ public class LoginInvalidoExceptionTest01 {
         String usernameDB = "Goku";
         String senhaDB = "ssj";
         System.out.println("Usuário");
+
         String userNameDigitado = teclado.nextLine();
+    
         System.out.println("Senha");
         String senhaDigitada = teclado.nextLine();
+
         if (!usernameDB.equals(userNameDigitado)) {
             throw new LoginInvalidoException();
         }
